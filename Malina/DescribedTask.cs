@@ -8,6 +8,7 @@ namespace przygotowaniesprawdzian.Tasks
 {
     public class DescribedTask : PriorityTask
     {
+        //publiczna właściwość Description typu string 
         public string Description { get; set; }
 
         public DescribedTask()
@@ -30,6 +31,9 @@ namespace przygotowaniesprawdzian.Tasks
         public override string ToString()
         {
             return base.ToString().TrimEnd('}') + "; Description; " + Description + "}";
+
+            //Object.ToString to główna metoda formatowania w .NET Framework. Konwertuje obiekt na jego reprezentację w postaci ciągu, dzięki czemu nadaje się do wyświetlania.
+            //W tym oprzypadku łączymy string "; Description; " wraz z wartością zmiennej Description będącej obiektem
         }
     }
 }
