@@ -24,7 +24,7 @@ namespace egzamin.Tasks
             Description = description;
         }
         // 3 linijka w 2
-        public DescribedTask(DescribedTask task) : base(task)
+        public DescribedTask(DescribedTask task) : base(task) // :base - odwołanie do parametrów rodzica obiektu
         {
             Name = task.Name;
             Priority = task.Priority;
